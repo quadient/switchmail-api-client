@@ -1,0 +1,46 @@
+{
+  "name": "switchmail-api-client",
+  "version": "0.0.1",
+  "description": "Node.js API client for switchmail.com, enables sending and tracking physical mails / letters. Uses axios client, exposes typescript definitions.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "generateApi": "sta -p https://developer.switchmail.com/apidoc/swagger.json -o ./src -n api.ts --api-class-name SwitchmailApi --unwrap-response-data --axios",
+    "dev:runExample": "ts-node ./examples/example.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quadient/switchmail-api-client.git"
+  },
+  "keywords": [
+    "switch",
+    "switchmail",
+    "physical",
+    "mail",
+    "letter",
+    "api",
+    "client",
+    "typescript"
+  ],
+  "author": "p.stovik@quadient.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quadient/switchmail-api-client/issues"
+  },
+  "homepage": "https://github.com/quadient/switchmail-api-client#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "prettier": "^2.8.8",
+    "swagger-typescript-api": "^12.0.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "form-data": "^4.0.0"
+  }
+}

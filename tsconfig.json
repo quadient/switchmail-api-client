@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es2022",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "sourceMap": false,
+        "experimentalDecorators": true,
+        "pretty": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "noImplicitReturns": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "lib": ["es2022"],
+    },
+    "exclude": ["./examples", "./dist"]
+} 

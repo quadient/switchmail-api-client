@@ -1,26 +1,7 @@
-# Node.js API Client for Switchmail.com
- 
-This is a Node.js TypeScript package that provides an API client for [Switchmail.com](https://switchmail.com). It enables you to send and track physical mails / letters through the Switchmail.com platform.
-
-## Installation
-
-To install this package, you can use npm:
-
-```bash
-npm install @quadient/switchmail-api-client
-```
-
-## Usage
-
-To use this API client, you need to have a Switchmail.com account and API key. You can sign up for an account at [https://switchmail.com/](https://switchmail.com/).
-
-Here is an example of how to use this package:
-
-```typescript
 import * as fs from "fs";
 import * as path from "path";
 import axios from "axios";
-import { SwitchmailApi, Types } from '@quadient/switchmail-api-client';
+import { SwitchmailApi, Types } from "../src";
 
 const email = "YOUR_EMAIL";
 const apiMasterKey = "YOUR_API_MASTER_KEY";
@@ -82,25 +63,3 @@ async function run() {
   console.log("[COMPLETED]");
 }
 run();
-```
-
-## API
-
-This package provides the API methods which are described in more details on the following pages
-
-- https://apidocs.switchmail.com/ (general overview and concepts)
-- https://developer.switchmail.com/apidoc/index.html (API reference)
-- https://developer.switchmail.com/apidoc/swagger.json (Swagger/OpenAPI specification)
-
-## Customizations
-
-This client is mainly generated using the https://github.com/acacode/swagger-typescript-api, called via
-
-```bash
-npm run generateApi
-```
-
-Feel free to customize and/or generate your own API client.
-
-## License  
-Licensed under the [MIT License](https://github.com/quadient/switchmail-api-client/blob/master/LICENSE).
