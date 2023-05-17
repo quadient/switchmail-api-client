@@ -14,7 +14,7 @@ npm install @quadient/switchmail-api-client
 
 To use this API client, you need to have a Switchmail.com account and API key. You can sign up for an account at [https://switchmail.com/](https://switchmail.com/).
 
-Here is a TypeScript example of how to use this package (e.g. via `npx ts-node example-code.ts`):
+Below is a TypeScript example of how to use this package (e.g. via `npx ts-node example-code.ts`):
 
 ```typescript
 import * as fs from "fs";
@@ -84,7 +84,7 @@ async function run() {
 run();
 ```
 
-Pure JavaScript / Node.js execution can be performed by removing the types and modifying the imports in following manner
+Pure JavaScript / Node.js execution can be performed by removing the types and modifying the imports in following manner.
 ```javascript
 const fs = require("fs");
 const path = require("path");
@@ -96,7 +96,7 @@ const SwitchmailApi = require("@quadient/switchmail-api-client").SwitchmailApi;
 
 ## API
 
-This package provides the API methods which are described in more details on the following pages
+This package provides the API methods which are described in more details on the following pages:
 
 - https://apidocs.switchmail.com/ (general overview and concepts)
 - https://developer.switchmail.com/apidoc/index.html (API reference)
@@ -104,7 +104,7 @@ This package provides the API methods which are described in more details on the
 
 ## Customizations
 
-This client is mainly generated using the https://github.com/acacode/swagger-typescript-api, called via
+This client is mainly generated using the https://github.com/acacode/swagger-typescript-api, called via:
 
 ```bash
 npm run generateApi
