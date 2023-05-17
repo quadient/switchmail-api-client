@@ -1,6 +1,6 @@
 {
   "name": "@quadient/switchmail-api-client",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "Node.js API client for switchmail.com, enables sending and tracking physical mails / letters. Uses axios client, exposes typescript definitions.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
